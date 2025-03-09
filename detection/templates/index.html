@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Live Emotion Detection</title>
+</head>
+<body>
+    <h1>Live Emotion Detection</h1>
+    <img src="{{ url_for('video_feed') }}" width="50%">
+    <button onclick="getAdvice()">Get Advice</button>
+    <h3 id="result"></h3>
+
+    <script src="/static/script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Emotion Detection</title>
+</head>
+<body>
+    <h1>Live Emotion Detection</h1>
+    <img src="{{ url_for('video_feed') }}" width="50%">
+    
+    <h3 id="result"></h3>
+
+    <script>
+        // Auto navigate to get_advice page after 5 seconds
+        setTimeout(() => {
+            window.location.href = "/get_advice"; 
+        }, 5000);
+    </script>
+</body>
+</html>

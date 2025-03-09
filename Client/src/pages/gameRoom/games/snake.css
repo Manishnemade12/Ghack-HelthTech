@@ -1,0 +1,48 @@
+.Snakegame {
+  #c {
+    width: calc(100vw - 10rem);
+    height: calc(100vh - 8rem);
+    border-radius: 2rem;
+  }
+
+  #snakenav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    top: 10px;
+    right: 10px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  #snakenav .block {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  #snakenav label {
+    margin-left: 9px;
+  }
+
+  .notice-pause {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    color: #b6b6b6;
+  }
+
+  canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(26, 26, 26);
+    border: 1px solid rgb(53, 53, 53);
+    color: #969696;
+    /* color: white; */
+  }
+}
